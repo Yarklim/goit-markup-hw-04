@@ -173,9 +173,18 @@ body {
 /* ========= Hero ========= */
 .hero {
 	max-width: 1600px;
+	height: 600px;
 	padding: 200px 0;
 	margin: 0 auto;
-	background-image: linear-gradient(to right, rgba(47, 48, 58, .4) 0%, rgba(47, 48, 58, .4) 100%), url(../images/photo/bg-Img.jpg);
+	background-image: linear-gradient(
+		to right, 
+		rgba(47, 48, 58, .4), 
+		rgba(47, 48, 58, .4)
+		), 
+		url(../images/photo/bg-Img.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .hero__content {
