@@ -340,23 +340,25 @@ body {
 
 .social-item {	
 	width: 44px;
-	height: 44px;
-	padding: 12px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.social-item:hover {	
-	background-color: var(--accent-color);
+	height: 44px;	
 }
 
 .social-link {
+	width: 100%;
+	height: 100%;
 	fill: var(--icon-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
 }
 
-.social-item:hover .social-link {
+.social-link:hover,
+.social-link:focus {	
+	background-color: var(--accent-color);
 	fill: var(--white-color);
 }
+
 /* ============================== */
 
 /* =========== Clients ============= */
@@ -374,18 +376,25 @@ body {
 	display: flex;
 	gap: 30px;
 }
-.clients-item {
-	max-width: 170px;
-	padding: 16px 32px;
+
+.client-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--icon-color);
+	width: 170px;
+	height: 92px;
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
-	cursor: pointer;
 }
-.client-link {
-	fill: var(--icon-color);
+.client-link:hover,
+.client-link:focus {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
 }
-.clients-item:hover .client-link {
-	fill: var(--accent-color);
+
+.item-client {
+	fill: currentColor;
 }
 
 /* ================================= */
@@ -513,22 +522,22 @@ body {
 	justify-content: center;
 }
 
-.footer__social-item {	
+.footer__social-item {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
-	border-radius: 50%;
-	cursor: pointer;
 }
 
 .footer__social-link {
-	fill: var(--white-color);
+	color: var(--white-color);
+	background: rgba(255, 255, 255, 0.1);
 }
 
-.footer__social-item:hover {	
+.footer__social-link-item {
+	fill: currentColor;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {	
 	background-color: var(--accent-color);
 }
-
-
-/* =======
 /* ================================= */
